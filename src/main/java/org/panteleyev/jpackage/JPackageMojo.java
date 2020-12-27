@@ -34,8 +34,7 @@ import static org.panteleyev.jpackage.StringUtil.escape;
  * For detailed information about these options please refer to
  * <a href="https://docs.oracle.com/en/java/javase/15/jpackage/packaging-tool-user-guide.pdf">Packaging Tool User's Guide</a></p>
  */
-@Mojo(name = "jpackage", defaultPhase = LifecyclePhase.NONE)
-@Execute(goal = "jpackage", phase = LifecyclePhase.PACKAGE)
+@Mojo(name = "jpackage", defaultPhase = LifecyclePhase.PACKAGE)
 public class JPackageMojo extends AbstractMojo {
     private static final String JPACKAGE_HOME_ENV = "JPACKAGE_HOME";
     private static final String TOOLCHAIN = "jdk";
